@@ -20,3 +20,7 @@ D:\Github\Calculator_1\Calculator_1\obj\Debug\Calculator_1.csproj.GenerateResour
 D:\Github\Calculator_1\Calculator_1\obj\Debug\Calculator_1.csproj.CoreCompileInputs.cache
 D:\Github\Calculator_1\Calculator_1\obj\Debug\Calculator_1.exe
 D:\Github\Calculator_1\Calculator_1\obj\Debug\Calculator_1.pdb
+D:\Github\Calculator_1\Calculator_1\bin\Debug\Calculator_1.exe.manifest
+D:\Github\Calculator_1\Calculator_1\bin\Debug\Calculator_1.application
+D:\Github\Calculator_1\Calculator_1\obj\Debug\Calculator_1.exe.manifest
+D:\Github\Calculator_1\Calculator_1\obj\Debug\Calculator_1.application

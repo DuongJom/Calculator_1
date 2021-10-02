@@ -296,6 +296,8 @@ namespace Calculator_1
             {
                 txtScreen.Text = txtScreen.Text.Remove(txtScreen.Text.Length - 1, 1);
             }
+            if (txtScreen.Text == "")
+                lblResult.Text = "0";
         }
     }
 }
