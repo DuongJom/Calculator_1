@@ -296,5 +296,10 @@ namespace Calculator_1
                 txtScreen.Text = txtScreen.Text.Remove(txtScreen.Text.Length - 1, 1);
             }
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
