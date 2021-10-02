@@ -245,11 +245,12 @@
             // 
             this.lblResult.AutoSize = true;
             this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(337, 37);
+            this.lblResult.Location = new System.Drawing.Point(265, 34);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(26, 29);
+            this.lblResult.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblResult.Size = new System.Drawing.Size(0, 29);
             this.lblResult.TabIndex = 19;
-            this.lblResult.Text = "0";
+            this.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Form1
             // 

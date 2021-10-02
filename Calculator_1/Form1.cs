@@ -223,7 +223,7 @@ namespace Calculator_1
                 if ((countOperator(operation, 1) == 0 && operation[0] == '-') || (countOperator(operation, 1) == 0 && operation[0] != '-'))
                     break;
             }
-            lblResult.Text = re.ToString();
+            lblResult.Text = Math.Round(re,5).ToString();
 
         }
 
