@@ -9,3 +9,14 @@ C:\Users\ASUS\Desktop\Calculator_1\obj\Debug\Calculator_1.csproj.GenerateResourc
 C:\Users\ASUS\Desktop\Calculator_1\obj\Debug\Calculator_1.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Desktop\Calculator_1\obj\Debug\Calculator_1.exe
 C:\Users\ASUS\Desktop\Calculator_1\obj\Debug\Calculator_1.pdb
+D:\Github\Calculator_1\Calculator_1\bin\Debug\Calculator_1.exe.config
+D:\Github\Calculator_1\Calculator_1\bin\Debug\Calculator_1.exe
+D:\Github\Calculator_1\Calculator_1\bin\Debug\Calculator_1.pdb
+D:\Github\Calculator_1\Calculator_1\obj\Debug\Calculator_1.csproj.AssemblyReference.cache
+D:\Github\Calculator_1\Calculator_1\obj\Debug\Calculator_1.csproj.SuggestedBindingRedirects.cache
+D:\Github\Calculator_1\Calculator_1\obj\Debug\Calculator_1.Form1.resources
+D:\Github\Calculator_1\Calculator_1\obj\Debug\Calculator_1.Properties.Resources.resources
+D:\Github\Calculator_1\Calculator_1\obj\Debug\Calculator_1.csproj.GenerateResource.cache
+D:\Github\Calculator_1\Calculator_1\obj\Debug\Calculator_1.csproj.CoreCompileInputs.cache
+D:\Github\Calculator_1\Calculator_1\obj\Debug\Calculator_1.exe
+D:\Github\Calculator_1\Calculator_1\obj\Debug\Calculator_1.pdb
