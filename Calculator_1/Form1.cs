@@ -224,13 +224,12 @@ namespace Calculator_1
                     break;
             }
             lblResult.Text = Math.Round(re,5).ToString();
-
         }
 
         private void btnC_Click(object sender, EventArgs e)
         {
             txtScreen.ResetText();
-            lblResult.Text = "0";
+            lblResult.ResetText();
         }
         public static string Reverse(string s)
         {
@@ -296,8 +295,6 @@ namespace Calculator_1
             {
                 txtScreen.Text = txtScreen.Text.Remove(txtScreen.Text.Length - 1, 1);
             }
-            if (txtScreen.Text == "")
-                lblResult.Text = "0";
         }
     }
 }

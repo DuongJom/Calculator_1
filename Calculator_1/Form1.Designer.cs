@@ -54,7 +54,7 @@
             // txtScreen
             // 
             this.txtScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtScreen.Location = new System.Drawing.Point(12, 12);
+            this.txtScreen.Location = new System.Drawing.Point(12, 8);
             this.txtScreen.Multiline = true;
             this.txtScreen.Name = "txtScreen";
             this.txtScreen.Size = new System.Drawing.Size(403, 63);
@@ -243,14 +243,13 @@
             // 
             // lblResult
             // 
-            this.lblResult.AutoSize = true;
             this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(265, 34);
+            this.lblResult.Location = new System.Drawing.Point(265, 33);
             this.lblResult.Name = "lblResult";
             this.lblResult.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblResult.Size = new System.Drawing.Size(0, 29);
+            this.lblResult.Size = new System.Drawing.Size(143, 29);
             this.lblResult.TabIndex = 19;
-            this.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblResult.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // Form1
             // 
