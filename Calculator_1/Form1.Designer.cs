@@ -48,7 +48,6 @@
             this.btnPlus = new System.Windows.Forms.Button();
             this.btnMinus = new System.Windows.Forms.Button();
             this.btnEqual = new System.Windows.Forms.Button();
-            this.lblResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtScreen
@@ -241,22 +240,11 @@
             this.btnEqual.UseVisualStyleBackColor = true;
             this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
             // 
-            // lblResult
-            // 
-            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(265, 33);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblResult.Size = new System.Drawing.Size(143, 29);
-            this.lblResult.TabIndex = 19;
-            this.lblResult.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(420, 243);
-            this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.btnPlus);
@@ -278,6 +266,8 @@
             this.Controls.Add(this.txtScreen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator Version 1.0";
@@ -309,7 +299,6 @@
         private System.Windows.Forms.Button btnPlus;
         private System.Windows.Forms.Button btnMinus;
         private System.Windows.Forms.Button btnEqual;
-        private System.Windows.Forms.Label lblResult;
     }
 }
 

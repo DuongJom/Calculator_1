@@ -223,13 +223,12 @@ namespace Calculator_1
                 if ((countOperator(operation, 1) == 0 && operation[0] == '-') || (countOperator(operation, 1) == 0 && operation[0] != '-'))
                     break;
             }
-            lblResult.Text = Math.Round(re,5).ToString();
+            txtScreen.Text = Math.Round(re,5).ToString();
         }
 
         private void btnC_Click(object sender, EventArgs e)
         {
             txtScreen.ResetText();
-            lblResult.ResetText();
         }
         public static string Reverse(string s)
         {
@@ -241,7 +240,7 @@ namespace Calculator_1
         {
             int count = 0;
             for (int i = pos; i < s.Length; i++)
-                if (s[i] == '+' || s[i] == '-')
+                if (s[i] == '+' || s[i] == '-'||s[i]=='x'||s[i]=='/')
                     count++;
             return count;
         }
@@ -299,7 +298,7 @@ namespace Calculator_1
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }
