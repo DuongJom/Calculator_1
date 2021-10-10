@@ -3,11 +3,6 @@
   <assemblyIdentity name="Calculator_1.application" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <description asmv2:publisher="Calculator_1" asmv2:product="Calculator_1" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" minimumRequiredVersion="1.0.0.0" co.v1:createDesktopShortcut="true">
-    <subscription>
-      <update>
-        <beforeApplicationStartup />
-      </update>
-    </subscription>
     <deploymentProvider codebase="http://127.0.0.1/Calculator/Calculator_1.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
@@ -21,7 +16,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yfaeCCk3NHxJeVJAplWHuFr1UaM777j+esQks9wo/bY=</dsig:DigestValue>
+        <dsig:DigestValue>+2M5B7Tpnbviy9gQAc0uTJV1PoLs9IkG4TDegUjd3gA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

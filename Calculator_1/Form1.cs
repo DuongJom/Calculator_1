@@ -103,10 +103,10 @@ namespace Calculator_1
             double re = 0;
             while (operation.Contains("x") || operation.Contains("/"))
             {
-                string firstNum = "", secondNum = "";
+                string firstNum = "", secondNum = ""; //7,1x3-2
                 char op = ' ';
                 string remain = "";
-                int start = 0, end = 0;
+                int start = 0, end = 0, pos = 0 ;
                 re = 0;
                 for (int i = 0; i < operation.Length; i++)
                 {
@@ -123,22 +123,47 @@ namespace Calculator_1
                             firstNum += operation[j];
                         }
                         firstNum = Reverse(firstNum);
-                        for (int j = i + 1; j < operation.Length; j++)
+                        pos = i + 1;
+                        if (operation[pos] == '-')
                         {
-                            if (operation[j] == '+' || operation[j] == '-' || operation[j] == 'x' || operation[j] == '/')
+                            for (int j = i + 2; j < operation.Length; j++)
                             {
-                                end = j;
-                                break;
+
+                                if (operation[j] == '+' || operation[j] == '-' || operation[j] == 'x' || operation[j] == '/')
+                                {
+                                    end = j;
+                                    break;
+                                }
+                                secondNum += operation[j];
                             }
-                            secondNum += operation[j];
+                            secondNum = operation[pos] + secondNum;
+                            if (countOperator(operation, i + 2) == 0) remain = "";
+                            else if (countOperator(operation, i + 1) > 0)
+                            {
+                                for (int j = end; j < operation.Length; j++)
+                                    remain += operation[j];
+                            }
+                        }
+                        else
+                        {
+                            for (int j = i + 1; j < operation.Length; j++)
+                            {
+
+                                if (operation[j] == '+' || operation[j] == '-' || operation[j] == 'x' || operation[j] == '/')
+                                {
+                                    end = j;
+                                    break;
+                                }
+                                secondNum += operation[j];
+                            }
+                            if (countOperator(operation, i + 1) == 0) remain = "";
+                            else if (countOperator(operation, i + 1) > 0)
+                            {
+                                for (int j = end; j < operation.Length; j++)
+                                    remain += operation[j];
+                            }
                         }
                         op = operation[i];
-                        if (countOperator(operation, i+1) == 0) remain = "";
-                        else if (countOperator(operation, i+1) > 0)
-                        {
-                            for (int j = end; j < operation.Length; j++)
-                                remain += operation[j];
-                        }
                         re = Convert.ToDouble(firstNum) * Convert.ToDouble(secondNum);
                         break;
                     }
@@ -155,22 +180,47 @@ namespace Calculator_1
                             firstNum += operation[j];
                         }
                         firstNum = Reverse(firstNum);
-                        for (int j = i + 1; j < operation.Length; j++)
+                        pos = i + 1;
+                        if (operation[pos] == '-')
                         {
-                            if (operation[j] == '+' || operation[j] == '-' || operation[j] == 'x' || operation[j] == '/' && j < operation.Length)
+                            for (int j = i + 2; j < operation.Length; j++)
                             {
-                                end = j;
-                                break;
+
+                                if (operation[j] == '+' || operation[j] == '-' || operation[j] == 'x' || operation[j] == '/')
+                                {
+                                    end = j;
+                                    break;
+                                }
+                                secondNum += operation[j];
                             }
-                            secondNum += operation[j];
+                            secondNum = operation[pos] + secondNum;
+                            if (countOperator(operation, i + 2) == 0) remain = "";
+                            else if (countOperator(operation, i + 1) > 0)
+                            {
+                                for (int j = end; j < operation.Length; j++)
+                                    remain += operation[j];
+                            }
+                        }
+                        else
+                        {
+                            for (int j = i + 1; j < operation.Length; j++)
+                            {
+
+                                if (operation[j] == '+' || operation[j] == '-' || operation[j] == 'x' || operation[j] == '/')
+                                {
+                                    end = j;
+                                    break;
+                                }
+                                secondNum += operation[j];
+                            }
+                            if (countOperator(operation, i + 1) == 0) remain = "";
+                            else if (countOperator(operation, i + 1) > 0)
+                            {
+                                for (int j = end; j < operation.Length; j++)
+                                    remain += operation[j];
+                            }
                         }
                         op = operation[i];
-                        if (countOperator(operation, i + 1) == 0) remain = "";
-                        else if (countOperator(operation, i + 1) > 0)
-                        {
-                            for (int j = end; j < operation.Length; j++)
-                                remain += operation[j];
-                        }
                         re = Convert.ToDouble(firstNum) / Convert.ToDouble(secondNum);
                         break;
                     }
@@ -178,7 +228,26 @@ namespace Calculator_1
                 if (start == 0)
                     operation = re.ToString() + remain;
                 else
+                {
                     operation = operation.Substring(0, start + 1) + re.ToString() + remain;
+                    int position = 0;
+                    string tmp1 = "";
+                    string tmp2 = "";
+                    for(int i = 0; i < operation.Length-1; i++)
+                    {
+                        if (operation[i] == '-' && operation[i + 1] == '-')
+                        {
+                            tmp1 = operation.Substring(0, i);
+                            position = i + 1;
+                            break;
+                        }
+                    }
+                    for (int j = position+1; j < operation.Length; j++)
+                    {
+                        tmp2 += operation[j];
+                    }
+                    operation = tmp1 + "+" + tmp2;
+                }
                 if (checkContain(operation) == true)
                     break;
             }
